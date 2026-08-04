@@ -1,5 +1,5 @@
 // اعمل استدعاء لملف الصوت هنا الأول
-import audioFile from "../assets/omk.mp3";
+// import audioFile from "../assets/omk.mp3";
 
 const eventConfig = {
   couple: {
@@ -14,13 +14,14 @@ const eventConfig = {
     invite: "are getting engaged",
     countdownTarget: "2026-08-31T20:00:00",
     listenLabel: "Tap to Listen",
-    // استخدم المتغير هنا بدل النص
-    audioSrc: audioFile,
-    curtainTopImage: "src/assets/curtain-top.png",
-    curtainLeftImage: "src/assets/curtain-left.png",
-    curtainRightImage: "src/assets/curtain-right.png",
-    staircaseImage: "src/assets/staircase.png",
-    characterImage: "src/assets/singer.png"
+    // التعديل هنا:
+    audioSrc: "/assets/omk.mp3",
+    // ... باقي الكود
+    curtainTopImage: "/assets/curtain-top.png",
+    curtainLeftImage: "/assets/curtain-left.png",
+    curtainRightImage: "/assets/curtain-right.png",
+    staircaseImage: "/assets/staircase.png",
+    characterImage: "/assets/singer.png"
   },
   message: {
     arabicLine1: "يارب تفضل",
@@ -29,10 +30,10 @@ const eventConfig = {
     rsvpLabel: "KINDLY RSVP HERE",
     rsvpLink: "#",
     birdIcon: "/assets/bird.png",
-    musicianLeftImage: "src/assets/musician-left.png",
-    musicianRightImage: "src/assets/musician-right.png",
-    coupleImage: "src/assets/our-photo.jpg",
-    chandelierSmallImage: "src/assets/chandelier-small.png"
+    musicianLeftImage: "/assets/musician-left.png",
+    musicianRightImage: "/assets/musician-right.png",
+    coupleImage: "/assets/our-photo.jpg",
+    chandelierSmallImage: "/assets/chandelier-small.png"
   },
   details: {
     venueName: "SEA GARDEN HALL",
@@ -47,8 +48,8 @@ const eventConfig = {
     time: "8:00PM",
     oudLeftImage: "/assets/oud-left.png",
     oudRightImage: "/assets/oud-right.png",
-    chandelierImage: "src/assets/chandelier-large.png",
-    palaceArtworkImage: "src/assets/palace-reflection.jpg"
+    chandelierImage: "/assets/chandelier-large.png",
+    palaceArtworkImage: "/assets/palace-reflection.jpg"
   }
 };
 
