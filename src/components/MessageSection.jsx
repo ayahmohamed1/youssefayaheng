@@ -8,8 +8,8 @@ export default function MessageSection() {
     <section className="relative w-full py-16 flex flex-col items-center px-8 z-20">
       <div className="relative w-full max-w-[340px]">
         {/* العصافير الذهبية أعلى الكارت */}
-        <img src={message.birdIcon} alt="" className="absolute -top-8 left-4 w-14 -scale-x-100 z-30" />
-        <img src={message.birdIcon} alt="" className="absolute -top-8 right-4 w-14 z-30" />
+        {/* <img src={message.birdIcon} alt="" className="absolute -top-8 left-4 w-14 -scale-x-100 z-30" />
+        <img src={message.birdIcon} alt="" className="absolute -top-8 right-4 w-14 z-30" /> */}
 
         {/* الكارت العنابي المقوس */}
         <motion.div 
