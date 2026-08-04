@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Amiri:wght@400;700&display=swap");
+
+@font-face {
+  font-family: 'DiwaniFont';
+  src: url('/fonts/diwani.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background-color: #2b0d10;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  color: #3E2A1B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shared narrow "invitation card" wrapper — every section shrinks to this,
+   never full-bleed viewport width, matching the tight proportions of the refs */
+.invite-frame {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tracked-title {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.22em;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #F3E3BE 0%, #D8B978 40%, #9C7638 70%, #E4C88A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pill-btn {
+  font-family: "Cinzel", serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  padding: 0.6rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid #D8B978;
+  color: #F3E3BE;
+  background: linear-gradient(180deg, #7C1F2C 0%, #3A0C13 100%);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+  display: inline-block;
+}
+
+/* Ornate maroon arch used by MessageSection: rounded gothic-arch top,
+   soft square-ish base, with a gold hairline trim via padding-box trick */
+.arch-card {
+  border-radius: 160px 160px 18px 18px / 90px 90px 18px 18px;
+  position: relative;
+}
+
+.arch-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(180deg, #E4C88A, #8C6432 45%, #E4C88A 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
